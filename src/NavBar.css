@@ -1,0 +1,92 @@
+@import "./vars.css";
+
+/* 
+.navbar ul{
+    list-style-type: none;
+    background-color: black;
+    padding: 30px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    /*display: block;*/
+    /*text-align: center;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover{
+    font-size: 20px;
+}
+.navbar li{
+    float: right;
+}
+.logo{
+    background-color: black;
+} */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+    
+    padding: 1rem 2rem;
+    color: var(--color-text);
+
+}
+
+
+.navbar a { /*for everything instead navbar*/
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1rem;
+  
+  font-weight: 100;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.navbar a:hover{
+  color: var(--color-text);
+  font-weight: 400;
+  
+  font-size: 1.25rem;
+  transform: scale(1.05);
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img{
+    height: 25px;
+    width: 25px;
+
+}
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: var(--color-text);
+
+}
+
