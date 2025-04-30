@@ -1,0 +1,17 @@
+.about-section{
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+.hero h1{
+    font-size: 3rem; 
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
