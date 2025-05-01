@@ -1,0 +1,37 @@
+@import "./vars.css";
+
+.work-section{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.work-item{
+    border: solid white;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    width: 300px;
+    gap: 0.2rem;
+    margin-bottom: 20px;
+    padding: 1rem;
+
+}
+.work-info{
+    flex: 1;
+
+}
+
+.work-img img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}

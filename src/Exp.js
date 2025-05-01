@@ -5,7 +5,7 @@ const Exp = () => {
     return (
         <section className = "experience">
             <h1><span className = "gradient-text">Experience</span></h1>
-            <div className = "exp-item">
+            {/* <div className = "exp-item">
               <div className = "exp-date">May 2025 - Aug 2025</div>
               <div className = "exp-info">
                 <h3>Software Developer Intern · Motorola Solutions</h3>
@@ -18,7 +18,7 @@ const Exp = () => {
                </div>
 
                </div>
-            </div>
+            </div> */}
             
             <div className = "exp-item">
               <div className = "exp-date">Jan 2025 - Apr 2025</div>
@@ -43,7 +43,7 @@ const Exp = () => {
             <div className = "exp-item">
                 <div className = "exp-date">Jul 2022 - Aug 2022</div>
                 <div className = "exp-info">
-                 <h3>Software Developer Intern · Interac </h3>
+                 <h3>Software Developer Intern · Interac Corp</h3>
                  <ul>
                     <li>Implemented NLP techniques and clustering algorithms
                          (HDBSCAN, PCA, Bag of Words) using Python, TensorFlow, 
