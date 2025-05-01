@@ -1,7 +1,6 @@
-
-
 import React from "react";
 import "./About.css";
+import aashiImg from './assets/aashisea.png';
 
 const About = () => {
     return (
@@ -17,7 +16,7 @@ const About = () => {
                 for <strong>Winter 2026</strong> internships and would love to get in touch!</p>
                 </div>
                 <div className = "about-image">
-                    <img src = "aashi.png" alt= "Aashi" />
+                    <img src= {aashiImg} alt="Aashi" />
                 </div>
             </div>
             

@@ -1,17 +1,44 @@
+@import "./vars.css";
+
 .about-section{
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #0d0d0d;
-    color: #fff;
+    padding: 200px 20px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
-.hero h1{
-    font-size: 3rem; 
-    margin-bottom: 20px;
+.about-content{
+    max-width: 12000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+.about-text{
+    flex: 1 1 500px;
+    padding-right: 2rem;  
+    padding-left: 10rem;
 }
 
+.about-text h2{
+    font-size: 2rem;
+    font-weight: 200;
+    padding-bottom: 1.5rem;
+}
+
+
+.about-image{
+    flex: 1 1 300px;
+    padding: 0.5rem;
+    align-items: center;
+    
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 50%;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 20px;
+}
