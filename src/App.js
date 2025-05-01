@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import NavBar from "./NavBar";
 import About from "./About";
 import Exp from "./Exp";
+import Work from "./work";
 import ParticlesComponent from './particles';
 import "@fontsource/poppins";
 
@@ -16,6 +17,7 @@ function App(){
         <Hero />
         <About />
         <Exp />
+        <Work />
       </div>
     </div>
   );
