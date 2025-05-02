@@ -1,0 +1,44 @@
+@import "./vars.css";
+.contact-section{
+    padding: 200px 20px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.contact-section p{
+    display: flex;
+    text-align: center;
+
+}
+
+.icons{
+    text-align: center;
+
+}
+
+.fa-brands.fa-github{
+    color: var(--color-purple);
+    padding: 20px;
+}
+
+.fa-brands.fa-medium{
+    color: var(--color-purple);
+    padding: 20px;
+}
+
+.fa-solid.fa-envelope{
+    color: var(--color-purple);
+    padding: 20px;
+
+}
+
+.fa-brands.fa-linkedin{
+    color: var(--color-purple);
+    padding: 20px;
+
+}
+
+.banner p{
+    font-size: 0.7rem;
+    text-align: center;
+}

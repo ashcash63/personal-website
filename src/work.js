@@ -1,5 +1,5 @@
 import React from "react";
-import "./work.css";
+import "./Work.css";
 import soilImg from "./assets/waterbuddy.png";
 import plateImg from "./assets/platecheck.png";
 import spineguardImg from "./assets/spineguard.png";
