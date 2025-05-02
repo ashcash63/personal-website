@@ -23,8 +23,8 @@ const Contact = () => {
                     <i className="fa-brands fa-linkedin fa-5x"></i>
                 </a> 
             </div>
-            <div className = "banner">
-                <p>Built & Designed by Aashi Chaubey</p>
+            <div className = "footer">
+                <p>Built & Designed by Aashi Chaubey &copy;2025;</p>
             </div>
         </section>
     )
