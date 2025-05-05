@@ -3,6 +3,9 @@ import "./Work.css";
 import soilImg from "./assets/waterbuddy.png";
 import plateImg from "./assets/platecheck.png";
 import spineguardImg from "./assets/spineguard.png";
+import carImg from "./assets/car.png";
+import faceImg from "./assets/face.png";
+import interacImg from "./assets/interac.png";
 const Work = () => {
     return(
         <section className = "work-section">
@@ -54,6 +57,63 @@ const Work = () => {
                     <span className = "badge">Streamlit</span>
                </div>
             </div>
+
+{/*NEXT THREE----------------------------------------------------------------*/ }
+
+            <div className = "work-item">
+                <h3>Autonomous Robot Navigator</h3>
+                <div className = "work-img">
+                    <img src = {carImg} alt = "car img"/>
+                </div>
+                <div className = "work-info">
+                    <p>Responsible for giving a simulated robot the intelligence to
+                        navigate from point-to-point while avoiding static objects. </p>
+                </div>
+                <div className = "exp-lang">
+                    <span className = "badge">C++</span>
+                    <span className = "badge">Linux</span>
+                    <span className = "badge">ROS2</span>
+                    <span className = "badge">Foxglove</span>
+               </div>
+            </div>
+
+            
+            <div className = "work-item">
+                <h3>Facial Expression Recognition</h3>
+                <div className = "work-img">
+                    <img src = {faceImg} alt = "face img"/>
+                </div>
+                <div className = "work-info">
+                    <p>Built a CNN-based model to classify faces into seven emotions using 
+                        the FER2013 dataset, which contains 48x48 grayscale images.</p>
+                </div>
+                <div className = "exp-lang">
+                    <span className = "badge">Python</span>
+                    <span className = "badge">Tensorflow</span>
+                    <span className = "badge">Keras</span>
+               </div>
+            </div>
+            
+            
+            <div className = "work-item">
+                <h3>Automated Category Assignation</h3>
+                <div className = "work-img">
+                    <img src = {interacImg} alt = "interac img"/>
+                </div>
+                <div className = "work-info">
+                    <p>Automates category assigning process of emerging trends in 
+                        online banking for Interac Corp</p>
+                </div>
+                <div className = "exp-lang">
+                    <span className = "badge">Python</span>
+                    <span className = "badge">Tensorflow</span>
+                    <span className = "badge">Numpy</span>
+                    <span className = "badge">Pandas</span>
+               </div>
+            </div>
+
+
+
             {/* <div className = "work-item">
                 <h3>Spineguard - Wearable Posture Tracker</h3>
                 <div className = "work-img">
