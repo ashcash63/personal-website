@@ -4,7 +4,7 @@ import aashiImg from './assets/aashisea.png';
 
 const About = () => {
     return (
-        <section className = "about-section">
+        <section id = "about" className = "about-section">
             <div className = "about-content">
                 <div className = "about-text">
                 <h2><span className = "gradient-text">About Me</span></h2>

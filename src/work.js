@@ -9,7 +9,7 @@ import interacImg from "./assets/interac.png";
 
 const Work = () => {
     return(
-        <section className = "work-section">
+        <section id = "work" className = "work-section">
         
             <div className = "work-item">
                 <h3>Water Buddy - Soil Irrigation System</h3>

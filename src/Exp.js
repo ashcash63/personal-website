@@ -3,7 +3,7 @@ import "./Exp.css";
 
 const Exp = () => {
     return (
-        <section className = "experience">
+        <section id = "exp" className = "experience">
             <h1><span className = "gradient-text">Experience</span></h1>
             {/* <div className = "exp-item">
               <div className = "exp-date">May 2025 - Aug 2025</div>

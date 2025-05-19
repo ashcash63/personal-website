@@ -1,6 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import styles from "./App.css";
+import "./App.css";
 import Hero from "./Hero";
 import NavBar from "./NavBar";
 import About from "./About";
@@ -10,11 +9,12 @@ import Contact from "./Contact"
 import ParticlesComponent from './particles';
 import "@fontsource/poppins";
 
+export default App;
 function App(){
   return (
-    <div className={styles.App}>
+    <div className="App">
       <ParticlesComponent id="particles" />
-      <div className={styles.content}>
+      <div className="content">
         <NavBar />
         <Hero />
         <About />
@@ -26,4 +26,3 @@ function App(){
   );
 }
 
-export default App;

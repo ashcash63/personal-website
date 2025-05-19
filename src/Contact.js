@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Contact = () => {
     return (
-        <section className = "contact-section">
+        <section id = "contact" className = "contact-section">
             <h2><span className = "gradient-text">Contact</span></h2>
             <h3>Feel free to get in touch!</h3>
             <div className = "icons">
