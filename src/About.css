@@ -4,10 +4,11 @@
     padding: 200px 20px;
     background-color: var(--color-bg);
     color: var(--color-text);
+
 }
 
 .about-content{
-    max-width: 12000px;
+    
     margin: auto;
     display: flex;
     align-items: center;

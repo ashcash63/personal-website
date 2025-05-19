@@ -9,6 +9,7 @@ import Contact from "./Contact"
 import ParticlesComponent from './particles';
 import "@fontsource/poppins";
 
+
 function App(){
   return (
     <div className={styles.App}>
@@ -24,5 +25,5 @@ function App(){
     </div>
   );
 }
-
 export default App;
+
