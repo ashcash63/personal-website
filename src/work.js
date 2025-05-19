@@ -6,12 +6,14 @@ import spineguardImg from "./assets/spineguard.png";
 import carImg from "./assets/car.png";
 import faceImg from "./assets/face.png";
 import interacImg from "./assets/interac.png";
+
 const Work = () => {
     return(
         <section className = "work-section">
         
             <div className = "work-item">
                 <h3>Water Buddy - Soil Irrigation System</h3>
+                <i class="fa-brands fa-github"></i>
                 <div className = "work-img">
                     <img src = {soilImg} alt = "soil img"/>
                 </div>
@@ -27,7 +29,8 @@ const Work = () => {
 
             
             <div className = "work-item">
-                <h3>PlateCheck - AI Powered Nutrition App</h3>
+                <h3>PlateCheck - AI Powered Nutrition App</h3> 
+                <i class="fa-brands fa-github"></i>
                 <div className = "work-img">
                     <img src = {plateImg} alt = "plate img"/>
                 </div>
@@ -37,13 +40,14 @@ const Work = () => {
                 </div>
                 <div className = "exp-lang">
                     <span className = "badge">Python</span>
-                    <span className = "badge">um idk</span>
+                    <span className = "badge">Figma</span>
                </div>
             </div>
             
             
             <div className = "work-item">
                 <h3>Spineguard - Wearable Posture Tracker</h3>
+                <i class="fa-brands fa-github"></i>
                 <div className = "work-img">
                     <img src = {spineguardImg} alt = "spineguard img"/>
                 </div>
@@ -62,6 +66,7 @@ const Work = () => {
 
             <div className = "work-item">
                 <h3>Autonomous Robot Navigator</h3>
+                <i class="fa-brands fa-github"></i>
                 <div className = "work-img">
                     <img src = {carImg} alt = "car img"/>
                 </div>
@@ -80,6 +85,7 @@ const Work = () => {
             
             <div className = "work-item">
                 <h3>Facial Expression Recognition</h3>
+                <i class="fa-brands fa-github"></i>
                 <div className = "work-img">
                     <img src = {faceImg} alt = "face img"/>
                 </div>
@@ -97,6 +103,7 @@ const Work = () => {
             
             <div className = "work-item">
                 <h3>Automated Category Assignation</h3>
+                <i class="fa-brands fa-github"></i>
                 <div className = "work-img">
                     <img src = {interacImg} alt = "interac img"/>
                 </div>

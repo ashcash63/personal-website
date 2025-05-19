@@ -43,6 +43,8 @@
   color: #f6f4e6;
   text-decoration: none;
   font-size: 1rem;
+  display: inline-block;
+  transform-origin: center;
   
   font-weight: 100;
   transition: all 0.3s ease-in-out;
@@ -50,12 +52,9 @@
 }
 
 .navbar a:hover{
-  color: var(--color-text);
+  color: var(--color-pink);
   font-weight: 400;
-  
-  font-size: 1.25rem;
-  transform: scale(1.05);
-
+  transform: scale(1.15);
 }
 
 .logo{

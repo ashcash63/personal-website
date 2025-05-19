@@ -13,7 +13,6 @@
 }
 
 .work-item{
-    border: solid white;
     display: flex;
     align-items:center;
     flex-direction: column;
@@ -21,6 +20,8 @@
     gap: 0.2rem;
     margin-bottom: 20px;
     padding: 1rem;
+    background-color: rgba(106,90,205,0.2);
+    border-radius: 10px;
 
 }
 .work-info{
