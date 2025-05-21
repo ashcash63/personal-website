@@ -14,15 +14,20 @@ const Work = () => {
             <div className = "work-items-container">
 
             <div className = "work-item">
-                <h3>Water Buddy - Soil Irrigation System</h3>
-                <i class="fa-brands fa-github"></i>
-                <div className = "work-img">
-                    <img src = {soilImg} alt = "soil img"/>
+                <div className="work-title-container">
+                <h3>Water Buddy</h3>
+                <a href = "https://github.com/ashcash63/Soil-Irrigation-System-Project">
+                    <i className ="fa-brands fa-github"></i>
+                </a>
                 </div>
                 <div className = "work-info">
                     <p>Designed and tested a low-power, portable prototype to
                         assist individuals with Alzheimer's and Dementia in maintaining gardens</p>
                 </div>
+                <div className = "work-img">
+                    <img src = {soilImg} alt = "soil img"/>
+                </div>
+                
                 <div className = "exp-lang">
                     <span className = "badge">C</span>
                     <span className = "badge">STM32 Microcontroller</span>
@@ -31,8 +36,10 @@ const Work = () => {
 
             
             <div className = "work-item">
-                <h3>PlateCheck - AI Powered Nutrition App</h3> 
-                <i class="fa-brands fa-github"></i>
+                <h3>PlateCheck</h3> 
+                <a href = "https://github.com/ashcash63/Platecheck-Hackathon-Project">
+                    <i className ="fa-brands fa-github"></i>
+                </a>
                 <div className = "work-img">
                     <img src = {plateImg} alt = "plate img"/>
                 </div>
@@ -48,8 +55,10 @@ const Work = () => {
             
             
             <div className = "work-item">
-                <h3>Spineguard - Wearable Posture Tracker</h3>
-                <i class="fa-brands fa-github"></i>
+                <h3>Spineguard</h3>
+                <a href = "https://github.com/ashcash63/deltahacks25">
+                    <i className ="fa-brands fa-github"></i>
+                </a>
                 <div className = "work-img">
                     <img src = {spineguardImg} alt = "spineguard img"/>
                 </div>
@@ -68,7 +77,9 @@ const Work = () => {
 
             <div className = "work-item">
                 <h3>Autonomous Robot Navigator</h3>
-                <i class="fa-brands fa-github"></i>
+                <a href = "https://github.com/ashcash63/wato_asd_training_aashi">
+                    <i className ="fa-brands fa-github"></i>
+                </a>
                 <div className = "work-img">
                     <img src = {carImg} alt = "car img"/>
                 </div>
@@ -87,7 +98,9 @@ const Work = () => {
             
             <div className = "work-item">
                 <h3>Facial Expression Recognition</h3>
-                <i class="fa-brands fa-github"></i>
+                <a href = "https://github.com/ashcash63/Facial-Expression-Recognition">
+                    <i className ="fa-brands fa-github"></i>
+                </a>
                 <div className = "work-img">
                     <img src = {faceImg} alt = "face img"/>
                 </div>
@@ -105,7 +118,9 @@ const Work = () => {
             
             <div className = "work-item">
                 <h3>Automated Category Assignation</h3>
-                <i class="fa-brands fa-github"></i>
+                <a href = "https://colab.research.google.com/drive/1LpVoZaAqPSvUZj-iVxZaA99PPw-kcOyz">
+                    <i className ="fa-brands fa-github"></i>
+                </a>
                 <div className = "work-img">
                     <img src = {interacImg} alt = "interac img"/>
                 </div>

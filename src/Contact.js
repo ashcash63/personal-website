@@ -9,18 +9,18 @@ const Contact = () => {
             <h3>Feel free to get in touch!</h3>
             <div className = "icons">
                 <a href ="https://github.com/ashcash63" target="_blank" rel="noopener noreferrer">
-                    <i className="fa-brands fa-github fa-5x"></i>
+                    <i className="fa-brands fa-github fa-4x"></i>
                 </a>
                 
                 <a href = "https://medium.com/@aashic6" target="_blank" rel="noopener noreferrer">
-                    <i className="fa-brands fa-medium fa-5x"></i>
+                    <i className="fa-brands fa-medium fa-4x"></i>
                 </a>
                 
                 <a href= "mailto:aashic63@gmail.com">
-                    <i className="fa-solid fa-envelope fa-5x"></i>
+                    <i className="fa-solid fa-envelope fa-4x"></i>
                 </a>
                 <a href = "https://www.linkedin.com/in/aashi-c-1b4165222/" target="_blank" rel="noopener noreferrer">
-                    <i className="fa-brands fa-linkedin fa-5x"></i>
+                    <i className="fa-brands fa-linkedin fa-4x"></i>
                 </a> 
             </div>
             <div className = "footer">

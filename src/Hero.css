@@ -10,9 +10,16 @@
 .hero h1{
     font-size: 3rem; 
     margin-bottom: 20px;
-    padding-top:50px;
 }
 
+.hero h2{
+    text-align: left; 
+    padding-left: 50px;
+}
+.hero h3{
+    text-align: right;
+    padding: 40px;
+}
 .gradient-text {
     background: linear-gradient(90deg, var(--color-purple), var(--color-pink));
     background-clip: text;

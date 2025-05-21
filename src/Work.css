@@ -58,9 +58,29 @@
     flex: 1;
 }
 
+.work-info p{
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+
+}
 .work-img img{
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
+    border: var(--color-purple);
+    border-width: 20px;
     object-fit: cover;
     border-radius: 10px;
+    padding: 20px;
+}
+
+.work-title-container{
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.work-title-container .fa-brands fa-github{
+    font-size: 3rem;
+    color: var(--color-text);
 }
