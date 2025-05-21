@@ -31,7 +31,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1b1b1b;
+    background-color: #110e28de ;
+    backdrop-filter:blur(8px);
     position: fixed;
     top: 0;
     width: 100%;

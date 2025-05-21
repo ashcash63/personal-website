@@ -2,5 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", Arial, Helevectica, sans-serif;
+  font-family: "JetBrains Mono", Arial, Helevectica, sans-serif;
+  /*font-family: "JetBrains Mono", monospace;*/
 }
