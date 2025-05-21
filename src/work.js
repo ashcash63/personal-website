@@ -10,7 +10,9 @@ import interacImg from "./assets/interac.png";
 const Work = () => {
     return(
         <section id = "work" className = "work-section">
-        
+            <h2><span className = "gradient-text">Projects</span></h2>
+            <div className = "work-items-container">
+
             <div className = "work-item">
                 <h3>Water Buddy - Soil Irrigation System</h3>
                 <i class="fa-brands fa-github"></i>
@@ -19,7 +21,7 @@ const Work = () => {
                 </div>
                 <div className = "work-info">
                     <p>Designed and tested a low-power, portable prototype to
-                        assist individuals with Alzheimer’s and Dementia in maintaining gardens</p>
+                        assist individuals with Alzheimer's and Dementia in maintaining gardens</p>
                 </div>
                 <div className = "exp-lang">
                     <span className = "badge">C</span>
@@ -36,7 +38,7 @@ const Work = () => {
                 </div>
                 <div className = "work-info">
                     <p>Plate Check provides gender-specific, personalized nutritional 
-                        insights to address nutrition gaps and improve women’s overall health.</p>
+                        insights to address nutrition gaps and improve women's overall health.</p>
                 </div>
                 <div className = "exp-lang">
                     <span className = "badge">Python</span>
@@ -136,6 +138,7 @@ const Work = () => {
                     <span className = "badge">Streamlit</span>
                </div>
             </div> */}
+            </div>
         </section>
     )
 }

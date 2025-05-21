@@ -45,7 +45,7 @@ const ParticlesComponent = (props) => {
           },
           onHover: {
             enable: true,
-            mode: 'grab',
+            mode: ['grab', 'bubble'],
           },
         },
         modes: {
@@ -55,6 +55,12 @@ const ParticlesComponent = (props) => {
           },
           grab: {
             distance: 150,
+          },
+          bubble: {
+            distance: 100,
+            duration: 2,
+            size: 5,
+            opacity: 0.6,
           },
         },
       },
@@ -76,7 +82,7 @@ const ParticlesComponent = (props) => {
             default: "bounce",
           },
           random: true,
-          speed: 1,
+          speed: 2,
           straight: false,
         },
         number: {

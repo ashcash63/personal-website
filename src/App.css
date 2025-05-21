@@ -14,6 +14,17 @@ styles.content {
   background-color: transparent;
 }
 
+.custom-cursor {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease;
+}
 /* .particles {
   position: fixed !important;
   top: 0;
