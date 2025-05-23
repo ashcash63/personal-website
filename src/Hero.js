@@ -11,9 +11,12 @@ const Hero = () => {
   return (
     <section id="hero" className="hero">
       <div className="hero-content">
+        <div className = "hero-heading">
         <h2>Hi! I'm </h2> 
         <h1><span className="gradient-text">Aashi Chaubey.</span> </h1>
+        </div>
         <h3>Software Engineer & FullStack Developer</h3>
+
         
         <button className="cta" onClick={() => scrollToSection('work')}>My work ↓</button>
       </div>
