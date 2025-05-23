@@ -7,16 +7,51 @@
     color: var(--color-text);
 }
 
-.hero h1{
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+/* .name-block {
+  display: flex;
+
+}
+
+.name-block h1 {
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+}
+
+.name-block h2 {
+  margin: 0;
+  padding-left: 0.1em; /* optional tweak */
+  font-size: 1.2rem;
+} */
+
+.hero-heading h3 {
+  padding-top: 1rem;
+}
+/* .hero-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.hero-heading h1{
     font-size: 4rem; 
     padding:20px;
 }
 
-.hero h2{
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-}
+.hero-heading h2{
+    text-align: left;
+    
+} */
+
 .hero h3{
     text-align: center;
     padding-bottom: 50px;
