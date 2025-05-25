@@ -47,7 +47,7 @@
     text-align: center;
     padding-bottom: 50px;
     padding-top: 10px;
-    animation: fadeIn 0.8s ease-out forwards;
+    animation: fadeIn 2s ease-out forwards;
 }
 .gradient-text {
     background: linear-gradient(90deg, var(--color-purple), var(--color-pink));
