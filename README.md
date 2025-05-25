@@ -1,1 +1,1 @@
-personal website in progress
+Personal Website built using React and CSS
