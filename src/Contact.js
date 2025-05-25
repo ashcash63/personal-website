@@ -1,12 +1,31 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./Contact.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Contact = () => {
+    const [displayText, setDisplayText] = useState('');
+    const targetText = "Feeel free to get in touch!";
+    const typingSpeed = 50;
+    
+    useEffect(() => {
+        let i = 0;
+        const typingInterval = setInterval(() => {
+            if (i< targetText.length){
+                setDisplayText(prevText => prevText + targetText.charAt(i));
+                i++;
+            } else{
+                clearInterval(typingInterval);
+            }
+        }, typingSpeed);
+
+        return () => {
+            clearInterval(typingInterval);
+        };
+    }, []);
     return (
         <section id = "contact" className = "contact-section">
             <h2><span className = "gradient-text">Contact</span></h2>
-            <h3>Feel free to get in touch!</h3>
+            <h3><span className = "typing-effect">{displayText}</span></h3>
             <div className = "icons">
                 <a href ="https://github.com/ashcash63" target="_blank" rel="noopener noreferrer">
                     <i className="fa-brands fa-github fa-4x"></i>

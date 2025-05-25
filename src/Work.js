@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import "./Work.css";
 import soilImg from "./assets/waterbuddy.png";
 import plateImg from "./assets/platecheck.png";
@@ -8,12 +8,44 @@ import faceImg from "./assets/face.png";
 import interacImg from "./assets/interac.png";
 
 const Work = () => {
+    const workItemRefs = useRef([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Stop observing once visible
+                    }
+                });
+            },
+            {
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            }
+        );
+
+        workItemRefs.current.forEach(item => {
+            if (item) observer.observe(item);
+        });
+
+        return () => {
+            workItemRefs.current.forEach(item => {
+                if (item) observer.unobserve(item);
+            });
+        };
+    }, []);
+
+    const addWorkItemRef = (el) => {
+        if (el && !workItemRefs.current.includes(el)) {
+            workItemRefs.current.push(el);
+        }
+    };
     return(
         <section id = "work" className = "work-section">
             <h2><span className = "gradient-text">Projects</span></h2>
             <div className = "work-items-container">
-
-            <div className = "work-item">
+            <div ref = {addWorkItemRef}  className = "work-item">
                 <div className="work-title-container">
                 <h3>Water Buddy</h3>
                 <a href = "https://github.com/ashcash63/Soil-Irrigation-System-Project">
@@ -35,7 +67,7 @@ const Work = () => {
             </div>
 
             
-            <div className = "work-item">
+            <div ref = {addWorkItemRef}  className = "work-item">
                 <div className="work-title-container">
                 <h3>PlateCheck</h3> 
                 <a href = "https://github.com/ashcash63/Platecheck-Hackathon-Project">
@@ -57,7 +89,7 @@ const Work = () => {
             </div>
             
             
-            <div className = "work-item">
+            <div ref = {addWorkItemRef}  className = "work-item">
                 <div className="work-title-container">
                 <h3>Spineguard</h3>
                 <a href = "https://github.com/ashcash63/deltahacks25">
@@ -80,7 +112,7 @@ const Work = () => {
 
 {/*NEXT THREE----------------------------------------------------------------*/ }
 
-            <div className = "work-item">
+            <div ref = {addWorkItemRef}  className = "work-item">
                 <div className="work-title-container">
                 <h3>Autonomous Robot Navigator</h3>
                 <a href = "https://github.com/ashcash63/wato_asd_training_aashi">
@@ -103,7 +135,7 @@ const Work = () => {
             </div>
 
             
-            <div className = "work-item">
+            <div ref = {addWorkItemRef}  className = "work-item">
                 <div className="work-title-container">
                 <h3>Facial Expression Recognition</h3>
                 <a href = "https://github.com/ashcash63/Facial-Expression-Recognition">
@@ -126,7 +158,7 @@ const Work = () => {
             </div>
             
             
-            <div className = "work-item">
+            <div ref = {addWorkItemRef}  className = "work-item">
                 <div className="work-title-container">
                 <h3>Automated Category Assignation</h3>
                 <a href = "https://colab.research.google.com/drive/1LpVoZaAqPSvUZj-iVxZaA99PPw-kcOyz">

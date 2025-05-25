@@ -1,8 +1,41 @@
-import React from "react";
+import React, { useEffect,useRef } from "react";
 import "./Exp.css";
 
 
 const Exp = () => {
+    const expItemRefs = useRef([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting){
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            }
+        );
+
+        expItemRefs.current.forEach(item => {
+            if (item) observer.observe(item);
+        });
+
+        return () => {
+            expItemRefs.current.forEach(item => {
+                if (item) observer.unobserve(item);
+            });
+        };
+    },[]);
+
+    const addExpItemRef = (el) => {
+        if (el && !expItemRefs.current.includes(el)) {
+            expItemRefs.current.push(el);
+        }
+    };
     return (
         <section id = "exp" className = "experience">
             <h1><span className = "gradient-text">Experience</span></h1>
@@ -21,7 +54,7 @@ const Exp = () => {
                </div>
             </div> */}
             
-            <div className = "exp-item">
+            <div ref = {addExpItemRef} className = "exp-item">
               <div className = "exp-date">Jan 2025 - Apr 2025</div>
               <div className = "exp-info">
                 <h3>Autonomous Software Developer · WATonomous</h3>
@@ -41,7 +74,7 @@ const Exp = () => {
                </div>
                </div>
                </div>
-            <div className = "exp-item">
+            <div ref = {addExpItemRef} className = "exp-item">
                 <div className = "exp-date">Jul 2022 - Aug 2022</div>
                 <div className = "exp-info">
                  <h3>Software Developer Intern · Interac Corp</h3>
