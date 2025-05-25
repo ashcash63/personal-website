@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import ParticlesComponent from './particles';
 import "@fontsource/poppins";
 import Conbar from "./Conbar";
+import Library from "./Library";
 
 function App() {
   useEffect(() => {
@@ -32,7 +33,9 @@ function App() {
         <About />
         <Exp />
         <Work />
+        <Library />
         <Contact />
+
       </div>
     </div>
   );
