@@ -3,13 +3,13 @@
 
 @keyframes fadeIn{
   0% {
-    transform:translate(20px);
+    transform:translateY(20px);
     opacity: 0;
 
   }
   100%{
     opacity: 1;
-    transform: translate(0);
+    transform: translateY(0);
 
   }
 }
@@ -47,6 +47,7 @@
     text-align: center;
     padding-bottom: 50px;
     padding-top: 10px;
+    animation: fadeIn 0.8s ease-out forwards;
 }
 .gradient-text {
     background: linear-gradient(90deg, var(--color-purple), var(--color-pink));

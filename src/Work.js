@@ -36,17 +36,20 @@ const Work = () => {
 
             
             <div className = "work-item">
+                <div className="work-title-container">
                 <h3>PlateCheck</h3> 
                 <a href = "https://github.com/ashcash63/Platecheck-Hackathon-Project">
                     <i className ="fa-brands fa-github"></i>
                 </a>
-                <div className = "work-img">
-                    <img src = {plateImg} alt = "plate img"/>
                 </div>
                 <div className = "work-info">
                     <p>Plate Check provides gender-specific, personalized nutritional 
                         insights to address nutrition gaps and improve women's overall health.</p>
                 </div>
+                <div className = "work-img">
+                    <img src = {plateImg} alt = "plate img"/>
+                </div>
+                
                 <div className = "exp-lang">
                     <span className = "badge">Python</span>
                     <span className = "badge">Figma</span>
@@ -55,17 +58,19 @@ const Work = () => {
             
             
             <div className = "work-item">
+                <div className="work-title-container">
                 <h3>Spineguard</h3>
                 <a href = "https://github.com/ashcash63/deltahacks25">
                     <i className ="fa-brands fa-github"></i>
                 </a>
-                <div className = "work-img">
-                    <img src = {spineguardImg} alt = "spineguard img"/>
                 </div>
                 <div className = "work-info">
                     <p>Wearable device designed to help users maintain good posture. 
                         It attaches to the user's back and provides real-time alerts 
                         when poor posture is detected.</p>
+                </div>
+                <div className = "work-img">
+                    <img src = {spineguardImg} alt = "spineguard img"/>
                 </div>
                 <div className = "exp-lang">
                     <span className = "badge">Python</span>
@@ -76,16 +81,18 @@ const Work = () => {
 {/*NEXT THREE----------------------------------------------------------------*/ }
 
             <div className = "work-item">
+                <div className="work-title-container">
                 <h3>Autonomous Robot Navigator</h3>
                 <a href = "https://github.com/ashcash63/wato_asd_training_aashi">
                     <i className ="fa-brands fa-github"></i>
                 </a>
-                <div className = "work-img">
-                    <img src = {carImg} alt = "car img"/>
                 </div>
                 <div className = "work-info">
                     <p>Responsible for giving a simulated robot the intelligence to
                         navigate from point-to-point while avoiding static objects. </p>
+                </div>
+                <div className = "work-img">
+                    <img src = {carImg} alt = "car img"/>
                 </div>
                 <div className = "exp-lang">
                     <span className = "badge">C++</span>
@@ -97,17 +104,20 @@ const Work = () => {
 
             
             <div className = "work-item">
+                <div className="work-title-container">
                 <h3>Facial Expression Recognition</h3>
                 <a href = "https://github.com/ashcash63/Facial-Expression-Recognition">
                     <i className ="fa-brands fa-github"></i>
                 </a>
-                <div className = "work-img">
-                    <img src = {faceImg} alt = "face img"/>
                 </div>
                 <div className = "work-info">
                     <p>Built a CNN-based model to classify faces into seven emotions using 
                         the FER2013 dataset, which contains 48x48 grayscale images.</p>
                 </div>
+                <div className = "work-img">
+                    <img src = {faceImg} alt = "face img"/>
+                </div>
+                
                 <div className = "exp-lang">
                     <span className = "badge">Python</span>
                     <span className = "badge">Tensorflow</span>
@@ -117,17 +127,20 @@ const Work = () => {
             
             
             <div className = "work-item">
+                <div className="work-title-container">
                 <h3>Automated Category Assignation</h3>
                 <a href = "https://colab.research.google.com/drive/1LpVoZaAqPSvUZj-iVxZaA99PPw-kcOyz">
                     <i className ="fa-brands fa-github"></i>
                 </a>
-                <div className = "work-img">
-                    <img src = {interacImg} alt = "interac img"/>
                 </div>
                 <div className = "work-info">
                     <p>Automates category assigning process of emerging trends in 
                         online banking for Interac Corp</p>
                 </div>
+                <div className = "work-img">
+                    <img src = {interacImg} alt = "interac img"/>
+                </div>
+                
                 <div className = "exp-lang">
                     <span className = "badge">Python</span>
                     <span className = "badge">Tensorflow</span>

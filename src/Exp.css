@@ -1,5 +1,16 @@
 @import "./vars.css";
 
+@keyframes fadeInUp{
+    0%{
+        transform: translateY(40px);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .experience{
     padding: 200px;
     background-color: var(--color-bg);
