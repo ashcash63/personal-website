@@ -3,23 +3,23 @@ import "./Contact.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Contact = () => {
-    const [displayText, setDisplayText] = useState('');
+    const [displayText, setDisplayText] = useState(''); // display text is text that's currently shown (start '' )
+    // setDisplayTExt used to update it letter by letter, useState sets up a reactive variable
     const targetText = "Feeel free to get in touch!";
-    const typingSpeed = 50;
+    const typingSpeed = 50; //50ms per letter
     
-    useEffect(() => {
-        let i = 0;
-        const typingInterval = setInterval(() => {
+        let i = 0; // basic loop
+        const typingInterval = setInterval(() => { // runs a function every typingSpeed
             if (i< targetText.length){
                 setDisplayText(prevText => prevText + targetText.charAt(i));
-                i++;
+                i++; // adds one char at a time
             } else{
-                clearInterval(typingInterval);
+                clearInterval(typingInterval); // stops interval when complete
             }
-        }, typingSpeed);
+        }, typingSpeed); 
 
         return () => {
-            clearInterval(typingInterval);
+            clearInterval(typingInterval); //clean up
         };
     }, []);
     return (
