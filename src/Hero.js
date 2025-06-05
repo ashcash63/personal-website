@@ -2,10 +2,10 @@ import React from "react";
 import './Hero.css';
 
 const Hero = () => {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (sectionId) => { // when u click on button it should scroll to section
+    const element = document.getElementById(sectionId); // find elemnt on the page with tha ID
+    if (element) { // if element exixts scrolll to it
+      element.scrollIntoView({ behavior: 'smooth' }); // transiton
     }
   };
   return (
