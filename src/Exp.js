@@ -3,7 +3,7 @@ import "./Exp.css";
 
 
 const Exp = () => {
-    const expItemRefs = useRef([]);
+    const expItemRefs = useRef([]); // ref stores an array of DOM elements
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -11,7 +11,7 @@ const Exp = () => {
                 entries.forEach(entry => {
                     if(entry.isIntersecting){
                         entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
+                        observer.unobserve(entry.target); //stop observering so it doesn't trigger again on future scrolls (item only animates once)
                     }
                 });
             },
@@ -20,18 +20,18 @@ const Exp = () => {
             }
         );
 
-        expItemRefs.current.forEach(item => {
-            if (item) observer.observe(item);
+        expItemRefs.current.forEach(item => { // loops over arrat of elements
+            if (item) observer.observe(item); // starts watching each individually
         });
 
         return () => {
             expItemRefs.current.forEach(item => {
-                if (item) observer.unobserve(item);
+                if (item) observer.unobserve(item); //cleanup
             });
         };
     },[]);
 
-    const addExpItemRef = (el) => {
+    const addExpItemRef = (el) => { // push into into the array everytime a new DOM element is rendered
         if (el && !expItemRefs.current.includes(el)) {
             expItemRefs.current.push(el);
         }
