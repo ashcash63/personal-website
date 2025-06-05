@@ -34,7 +34,7 @@ const About = () => { // functional component
     return (
         <section id = "about" className = "about-section">
             <div className = "about-content">
-                <div ref= {textRef} className = "about-text"> // text ref here 
+                <div ref= {textRef} className = "about-text"> 
                 <h2><span className = "gradient-text">About Me</span></h2>
                 <p>I'm Aashi Chaubey, a <strong>Computer Engineering</strong> student at the 
                 University of Waterloo with a passion for autonomous systems and AI/ML. 
@@ -43,7 +43,7 @@ const About = () => { // functional component
                 and Tensorflow. On my weekends, I love participating in hackathons and catching up on rom-coms. I am looking 
                 for <strong>Winter 2026</strong> internships and would love to get in touch!</p>
                 </div>
-                <div ref= {imageRef} className = "about-image"> // image ref here
+                <div ref= {imageRef} className = "about-image"> 
                     <img src= {aashiImg} alt="Aashi" />
                 </div>
             </div>
