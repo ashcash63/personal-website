@@ -11,14 +11,14 @@ import "@fontsource/poppins";
 import Conbar from "./Conbar";
 
 function App() {
-  useEffect(() => {
-    const cursor = document.getElementById("custom-cursor");
-    const move = (e) => {
-      cursor.style.left = e.clientX + "px";
+  useEffect(() => {//custom cursor
+    const cursor = document.getElementById("custom-cursor"); // grab dom element with ref to id="custom-cursor" whch is a styled div
+    const move = (e) => { // move is function that runs whenever you move ur mouse
+      cursor.style.left = e.clientX + "px"; // mouse's x and y position on the screen
       cursor.style.top = e.clientY + "px";
     };
-    window.addEventListener("mousemove", move);
-    return () => window.removeEventListener("mousemove", move);
+    window.addEventListener("mousemove", move); // event listener - everytime the mousemoves, clal the move function
+    return () => window.removeEventListener("mousemove", move); // cleanup, when component unmounts it removes the event listener so it isn't running in the background
   }, []);
 
   return (
